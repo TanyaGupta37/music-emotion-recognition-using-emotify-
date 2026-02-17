@@ -59,19 +59,16 @@
 <div class="space-y-6">
 <div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
 <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">Literature Review / Market Research</h3>
-<p class="text-sm text-slate-500 italic">Early approaches (pre-2015) treated music emotion recognition as a simple classification problem — extract hand-crafted audio features, feed into a classical model like SVM or KNN, predict one emotion per song. But single song-level labels ignored the reality that emotion in music changes over time. 
-        <p>
-        The Dataset Problem<br>
+<p class="text-sm text-slate-500 italic">Early approaches (pre-2015) treated music emotion recognition as a simple classification problem — extract hand-crafted audio features, feed into a classical model like SVM or KNN, predict one emotion per song. But single song-level labels ignored the reality that emotion in music changes over time. <br>
+        The Dataset Problem:<br>
         Russell's Circumplex Model (1980) — foundational psychology work that defined emotions along two dimensions: valence (positive/negative) and arousal (calm/excited). Most early MER datasets were built around this.<br>
         Emotify (Aljanaki et al., 2013) — introduced categorical emotion labels for music, moving beyond valence/arousal. 400 songs, multiple annotators. First major dataset with named emotions.<br>
         PMEmo (Zhang et al., 2018) — addressed temporal limitation with continuous per-second emotion ratings. 794 songs. Strong benchmark but only measures valence and arousal, not named emotions.<br>
         DEAP (Koelstra et al., 2012) — added physiological signals (EEG, skin conductance) alongside music. Richer but expensive to collect and harder to generalise.<br>
-        Gap identified: No dataset combined named categorical emotions with temporal segment-level annotations at scale.</p>
-        <p>
+        Gap identified: No dataset combined named categorical emotions with temporal segment-level annotations at scale.<br>
         CNNs on spectrograms (Dong, 2018) showed that treating audio as an image and applying convolutional networks could outperform hand-crafted features but required large datasets.<br>
         LSTM and recurrent models were applied to capture temporal emotion changes within songs; promising but again data hungry.<br>
-                Transfer learning with transformers — HuBERT, wav2vec 2.0 (2021-2022) — pretrained on massive audio corpora, fine-tuned for emotion. Currently state of the art. Achieves 0.85+ even on hard multiclass problems.<br>
-        </p>
+        Transfer learning with transformers — HuBERT, wav2vec 2.0 (2021-2022) — pretrained on massive audio corpora, fine-tuned for emotion. Currently state of the art. Achieves 0.85+ even on hard multiclass problems.<br>
 </p>
 </div>
 <div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
